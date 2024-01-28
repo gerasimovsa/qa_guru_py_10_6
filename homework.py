@@ -77,8 +77,7 @@ def test_find_suitable_user():
 def format_func(func, *args):
     func_name = func.__name__
     func_name = func_name.replace("_", " ").title()
-    arg_names = [str(arg) for arg in args]
-    arg_names = ", ".join(arg_names)
+    arg_names = ", ".join(args)
     return f"{func_name} [{arg_names}]"
 
 
